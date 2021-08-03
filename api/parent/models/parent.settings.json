@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "parents",
+  "info": {
+    "name": "parent"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

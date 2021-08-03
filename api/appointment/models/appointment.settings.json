@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appointments",
+  "info": {
+    "name": "appointment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date_of_start": {
+      "type": "datetime"
+    },
+    "date_of_end": {
+      "type": "datetime"
+    },
+    "price": {
+      "type": "float"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "appointments"
+    },
+    "addresses": {
+      "collection": "address",
+      "via": "appointment"
+    },
+    "isPaid": {
+      "type": "boolean"
+    }
+  }
+}

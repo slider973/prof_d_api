@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/slot-appointments",
+      "handler": "slot-appointment.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/slot-appointments/count",
+      "handler": "slot-appointment.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/slot-appointments/:id",
+      "handler": "slot-appointment.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/slot-appointments",
+      "handler": "slot-appointment.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/slot-appointments/:id",
+      "handler": "slot-appointment.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/slot-appointments/:id",
+      "handler": "slot-appointment.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

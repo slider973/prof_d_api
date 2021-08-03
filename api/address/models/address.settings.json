@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "address"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "street": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "locality": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "users": {
+      "via": "address",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "appointment": {
+      "via": "addresses",
+      "model": "appointment"
+    }
+  }
+}

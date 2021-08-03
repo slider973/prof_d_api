@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "follow_ups",
+  "info": {
+    "name": "follow_up"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "child": {
+      "model": "child",
+      "via": "follow_up"
+    },
+    "appointments": {
+      "collection": "appointment"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
